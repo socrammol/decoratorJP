@@ -1,0 +1,33 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package Outros;
+
+import Complementos.Complementos;
+import Coquetel.Coquetel;
+
+/**
+ *
+ * @author mmol
+ */
+public class Gelo_Seco extends Complementos {
+    
+    public Gelo_Seco(Coquetel coquetel) {
+        //super(coquetel);
+        this.coquetel = coquetel;
+    }
+    @Override
+    public String getDescrição() {
+        return this.coquetel.getDescrição() + "Gelo Seco \n";// + super.getDescricao();
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public double getPreco() {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    return this.coquetel.getPreco() + 9.00;// + super.getPreco();
+    }
+    
+}
