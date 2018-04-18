@@ -10,7 +10,7 @@ package Coquetel;
  * @author mmol
  */
 public abstract class Coquetel {
-    public String descricao = "coquetel\n";
+    private String descricao = "coquetel\n";
     public String getDescrição(){
         return descricao ;
     }
